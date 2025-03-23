@@ -16,7 +16,7 @@ git config --global user.email 'seu_email@gmail.com'
 git config --global init.defaultBranch main
 ```
 
-# Configure o .gitignore
+Configure o .gitignore
 
 ```
 git init
