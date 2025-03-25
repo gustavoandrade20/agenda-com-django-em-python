@@ -1,17 +1,18 @@
+from django.contrib.auth.models import User
 from django.db import models
 from django.utils import timezone
-from django.contrib.auth.models import User
 
 # id (primary key - automático)
 # first_name (string), last_name (string), phone (string)
 # email (email), created_date (date), description (text)
+# category (foreign key), show (boolean), picture (imagem)
+# owner (foreign key)
 
-# category (foreign key), show (boolean), owner (foreign key)
-# picture (imagem)
 
 class Category(models.Model):
     class Meta:
-        verbose_name = 'Categoria'
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
 
     name = models.CharField(max_length=50)
 
